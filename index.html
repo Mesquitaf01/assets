@@ -141,17 +141,33 @@ frameborder="0"
           400px"
           src="mozilla-dinosaur-head 2-120w.png 120w"/>
         </a>
+
         <a href="https://addons.mozilla.org/">
-          <img>
+
+          <img srcset="firefox-addons 2-120w.jpg 120w, 
+                       firefox-addons-400w.jpg 400w"
+              sizes="(max-width: 500px) 120px,
+              400px"
+          src="firefox-addons 2-120w.jpg"/>
         </a>
+
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img srcset=" 120w, 
+           400w"
+  sizes="(max-width: 500px) 120px,
+400px"
+src="mozilla-dinosaur-head 2-120w.png 120w">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+  <source media="(max-width: 600px)" srcset="red-panda-400w.jpg" />
+  <source media="(min-width: 600px)" srcset="red-panda2-120w.jpg" />
+  <img src="red-panda-400w.jpg" alt="Chris standing up holding his daughter Elva" />
+</picture>
       </div>
 
     </main>
